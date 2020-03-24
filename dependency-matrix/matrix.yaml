@@ -5,3 +5,9 @@ dependencies:
   url: https://github.com/jstrachan/godemo41.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: jstrachan
+  repo: demo300
+  url: https://github.com/jstrachan/demo300.git
+  version: ""
+  versionURL: ""
