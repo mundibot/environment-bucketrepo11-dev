@@ -3,7 +3,7 @@ autoUpdate:
   schedule: ""
 bootConfigURL: https://github.com/jenkins-x/jenkins-x-boot-helmfile-config
 cluster:
-  clusterName: bucketrepo11
+  clusterName: bucketrepo12
   devEnvApprovers:
   - jstrachan
   environmentGitOwner: jstrachan
@@ -17,7 +17,7 @@ cluster:
   zone: europe-west1-d
 environments:
 - ingress:
-    domain: 35.205.151.95.nip.io
+    domain: ""
     externalDNS: false
     namespaceSubDomain: -jx.
     tls:
@@ -49,7 +49,7 @@ environments:
 gitops: true
 helmfile: true
 ingress:
-  domain: 35.205.151.95.nip.io
+  domain: ""
   externalDNS: false
   namespaceSubDomain: -jx.
   tls:
