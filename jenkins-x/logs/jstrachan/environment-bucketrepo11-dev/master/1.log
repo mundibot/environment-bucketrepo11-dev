@@ -1,0 +1,42 @@
+
+Showing logs for build [32mjstrachan-environment-bucketrep-x8tw8-1[0m stage [32mrelease[0m and container [32mstep-credential-initializer-vs477[0m
+{"level":"warn","ts":1585043385.785409,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1585043385.7859278,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mjstrachan-environment-bucketrep-x8tw8-1[0m stage [32mrelease[0m and container [32mstep-working-dir-initializer-lrwmm[0m
+{"level":"warn","ts":1585043386.298809,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1585043386.3000717,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mjstrachan-environment-bucketrep-x8tw8-1[0m stage [32mrelease[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mjstrachan-environment-bucketrep-x8tw8-1[0m stage [32mrelease[0m and container [32mstep-git-source-jstrachan-environment-bucketrep-x8tw8-56vqw[0m
+{"level":"warn","ts":1585043450.4312258,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1585043451.7729616,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*********/environment-bucketrepo11-dev.git @ v0.0.1 in path /workspace/source"}
+
+Showing logs for build [32mjstrachan-environment-bucketrep-x8tw8-1[0m stage [32mrelease[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:5869986198256bb4238271a1e28b3760d704c091
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mjstrachan-environment-bucketrep-x8tw8-1[0m stage [32mrelease[0m and container [32mstep-validate-git[0m
+Git configured for user: jenkins-x-bot and email jenkins-x@googlegroups.com
+
+Showing logs for build [32mjstrachan-environment-bucketrep-x8tw8-1[0m stage [32mrelease[0m and container [32mstep-verify-preinstall[0m
+no need to reconnect to cluster
+writing the following to the OWNERS file for the development environment repository:
+approvers:
+- *********
+reviewers:
+- *********
+WARNING: TLS is not enabled so your webhooks will be called using HTTP. This means your webhook secret will be sent to your cluster in the clear. See https://jenkins-x.io/docs/getting-started/setup/boot/#ingress for more information
+Verifying the kubernetes cluster before we try to boot Jenkins X in namespace: **
+Trying to lazily create any missing resources to get the current cluster ready to boot Jenkins X
+Verifying Ingress...
+Clearing the domain 35.205.151.95.nip.io as when using auto-DNS domains we need to regenerate to ensure its always accurate in case the cluster or ingress service is recreated
+
+Using namespace '**' from context named '' on server ''.
+
+Verifying Storage...
+Error checking bucket exists: , failed to run 'gsutil ls -p *********-multicluster' command in directory '', output: 'AccessDeniedException: 403 Primary: /namespaces/*********-multicluster.svc.id.goog with additional claims does not have storage.buckets.list access to project 90706211714.'
+error: failed to ensure the bucket URL gs://*********-logs is created: checking if the provided bucket exists: failed to run 'gsutil ls -p *********-multicluster' command in directory '', output: 'AccessDeniedException: 403 Primary: /namespaces/*********-multicluster.svc.id.goog with additional claims does not have storage.buckets.list access to project 90706211714.'
+[31m
+Pipeline failed on stage 'release' : container 'step-verify-preinstall'. The execution of the pipeline has stopped.[0m
