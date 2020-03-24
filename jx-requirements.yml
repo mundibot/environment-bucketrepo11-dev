@@ -77,6 +77,6 @@ velero:
   schedule: ""
   ttl: ""
 versionStream:
-  ref: v2.0.62
+  ref: bump-regex-version-a7f98749-6dbf-11ea-aa09-f60e6873d93d
   url: https://github.com/jenkins-x-labs/jenkins-x-versions.git
 webhook: lighthouse
