@@ -64,14 +64,14 @@ storage:
     enabled: false
     url: ""
   logs:
-    enabled: false
-    url: ""
+    enabled: true
+    url: "gs://jstrachan-logs"
   reports:
-    enabled: false
-    url: ""
+    enabled: true
+    url: "gs://jstrachan-logs"
   repository:
-    enabled: false
-    url: ""
+    enabled: true
+    url: "gs://jstrachan-repo"
 vault: {}
 velero:
   schedule: ""
