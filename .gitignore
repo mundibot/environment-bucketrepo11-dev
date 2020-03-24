@@ -1,3 +1,5 @@
+secrets
+
 # avoid generated helmfiles
 jx-requirements.values.yaml.gotmpl
 apps/helmfile.yaml

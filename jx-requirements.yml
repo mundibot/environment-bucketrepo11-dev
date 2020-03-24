@@ -4,21 +4,21 @@ autoUpdate:
 bootConfigURL: https://github.com/jenkins-x/jenkins-x-boot-helmfile-config
 cluster:
   chartRepository: http://bucketrepo/bucketrepo/charts/
-  clusterName: bucketrepo12
+  clusterName: munditrade
   devEnvApprovers:
-  - jstrachan
-  environmentGitOwner: jstrachan
+  - juanchristensen
+  environmentGitOwner: munditrade
   gitKind: github
   gitName: github
   gitServer: https://github.com
   namespace: jx
-  project: jstrachan-multicluster
+  project: munditrade
   provider: gke
   registry: gcr.io
-  zone: europe-west1-d
+  zone: us-central1-a
 environments:
 - ingress:
-    domain: 35.205.151.95.nip.io
+    domain: 35.226.12.21.nip.io
     externalDNS: false
     namespaceSubDomain: -jx.
     tls:
@@ -50,7 +50,7 @@ environments:
 gitops: true
 helmfile: true
 ingress:
-  domain: 35.205.151.95.nip.io
+  domain: 35.226.12.21.nip.io
   externalDNS: false
   namespaceSubDomain: -jx.
   tls:
@@ -66,13 +66,13 @@ storage:
     url: ""
   logs:
     enabled: true
-    url: gs://jstrachan-br11-logs
+    url: gs://munditrade-br11-logs
   reports:
     enabled: false
     url: ""
   repository:
     enabled: true
-    url: gs://jstrachan-br11-repo
+    url: gs://munditrade-br11-repo
 vault: {}
 velero:
   schedule: ""
