@@ -3,6 +3,7 @@ autoUpdate:
   schedule: ""
 bootConfigURL: https://github.com/jenkins-x/jenkins-x-boot-helmfile-config
 cluster:
+  chartRepository: http://bucketrepo/bucketrepo/charts/
   clusterName: bucketrepo12
   devEnvApprovers:
   - jstrachan
